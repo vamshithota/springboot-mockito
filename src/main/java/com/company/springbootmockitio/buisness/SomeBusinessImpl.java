@@ -1,7 +1,10 @@
 package com.company.springbootmockitio.buisness;
 
+import com.company.springbootmockitio.data.SomeDataService;
+
 public class SomeBusinessImpl {
-	private SomeDataService someDataService;
+	
+private SomeDataService someDataService;
 	
 	public void setSomeDataService(SomeDataService someDataService) {
 		this.someDataService = someDataService;
@@ -29,4 +32,5 @@ public class SomeBusinessImpl {
 		//Functional Style
 		//return Arrays.stream(data).reduce(Integer::sum).orElse(0);
 	}
+
 }
